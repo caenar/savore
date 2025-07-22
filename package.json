@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "php -S localhost:8000 -t public & browser-sync start --config bs-config.js",
+    "dev": "concurrently \"php -S localhost:8000 -t public\" \"browser-sync start --config bs-config.js\""
+  },
+  "dependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.2.0"
+  }
+}
